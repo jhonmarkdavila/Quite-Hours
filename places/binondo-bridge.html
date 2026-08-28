@@ -62,6 +62,67 @@
         </table>
     </main>
 
+    <h2>Suggest a Place</h2>
+
+<p>
+    Know a peaceful place that you think belongs in Quiet Hours?
+    Suggest it to us and tell us what makes it worth visiting.
+</p>
+
+<form>
+
+    <p>
+        <label for="place-name">Place Name</label><br>
+        <input type="text" id="place-name" name="place-name" required>
+    </p>
+
+    <fieldset>
+        <legend>What type of place is it?</legend>
+
+        <p>
+            <input type="radio" id="food" name="category" value="food">
+            <label for="food">Food Spot</label>
+        </p>
+
+        <p>
+            <input type="radio" id="study" name="category" value="study">
+            <label for="study">Study Spot</label>
+        </p>
+
+        <p>
+            <input type="radio" id="outdoors" name="category" value="outdoors">
+            <label for="outdoors">Outdoor Place</label>
+        </p>
+    </fieldset>
+
+    <p>What's good about it?</p>
+
+    <p>
+        <input type="checkbox" id="affordable" name="good-points" value="affordable">
+        <label for="affordable">Affordable</label>
+    </p>
+
+    <p>
+        <input type="checkbox" id="quiet" name="good-points" value="quiet">
+        <label for="quiet">Quiet and Relaxing</label>
+    </p>
+
+    <p>
+        <input type="checkbox" id="wifi" name="good-points" value="wifi">
+        <label for="wifi">Good Wi-Fi</label>
+    </p>
+
+    <p>
+        <label for="contact-email">Contact Email</label><br>
+        <input type="email" id="contact-email" name="contact-email" required>
+    </p>
+
+    <p>
+        <button type="submit">Suggest Place</button>
+    </p>
+
+</form>
+
     <footer>
         <p>&copy; 2026 Quiet Hours</p>
     </footer>
