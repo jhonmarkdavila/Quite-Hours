@@ -14,6 +14,13 @@ main {
     padding: 0 20px;
 }
 
+.welcome-banner {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -27,45 +34,34 @@ body {
 }
 
 /* 3. Layout Regions */
-header {
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--brand);
     color: var(--white);
     padding: 30px;
-    text-align: center;
 }
 
-header h1 {
+.site-header h1 {
     margin: 0;
 }
 
-header p {
-    margin: 5px 0 20px;
-}
-
-nav {
-    background-color: var(--brand);
-    padding: 15px;
-    text-align: center;
-}
-
-nav ul {
+.site-header nav ul {
+    display: flex;
+    gap: 20px;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-nav li {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-nav a {
+.site-header nav a {
     color: var(--white);
     text-decoration: none;
     font-weight: bold;
 }
 
-nav a:hover {
+.site-header nav a:hover {
     text-decoration: underline;
 }
 
