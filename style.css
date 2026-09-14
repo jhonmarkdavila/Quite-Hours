@@ -78,19 +78,19 @@ footer {
 }
 
 /* 4. Components */
-.places-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+.place-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
 }
 
 
 .place-card {
+    flex: 1 1 240px;
     background-color: var(--white);
     border-radius: 10px;
     border-left: 5px solid var(--brand);
     padding: 20px;
-    margin-bottom: 25px;
 }
 
 .place-card h3 {
