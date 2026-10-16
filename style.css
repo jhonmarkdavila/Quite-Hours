@@ -221,3 +221,101 @@ textarea:focus {
     outline: 3px solid var(--brand);
     outline-offset: 2px;
 }
+
+
+
+/* Place Guide Decisions */
+.place-decisions {
+    margin: 60px 0;
+    padding: 40px 30px;
+    background: #f7f8f5;
+    border-radius: 18px;
+}
+
+.decisions-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.eyebrow {
+    color: #71816d;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.decisions-heading h2 {
+    margin: 10px 0;
+    font-size: 30px;
+    color: #263b2d;
+}
+
+.decisions-heading > p:last-child {
+    color: #68736a;
+}
+
+.decision-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.decision-card {
+    padding: 25px;
+    border-radius: 14px;
+    background: white;
+    border: 1px solid #e5e9e2;
+    box-shadow: 0 5px 15px rgba(30, 50, 35, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.decision-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 22px rgba(30, 50, 35, 0.1);
+}
+
+.decision-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: #edf2e9;
+    color: #47634b;
+    font-size: 25px;
+    margin-bottom: 18px;
+}
+
+.decision-label {
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: #798477;
+}
+
+.decision-card h3 {
+    color: #2c4030;
+    margin: 10px 0;
+    font-size: 21px;
+}
+
+.decision-card > p:last-child {
+    color: #737d73;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+    .place-decisions {
+        padding: 30px 18px;
+    }
+
+    .decision-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .decisions-heading h2 {
+        font-size: 25px;
+    }
+}
